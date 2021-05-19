@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+}
+
+/*写第一条注释：
+    *（星号，asterisk）将匹配文档的所有元素
+*/
+
+body{
+    background: white;
+} 
+/* 背景颜色 ： 白色*/
+
+.rainbow {
+    height: 250px;
+    overflow: hidden;
+}
+
+.rainbow div{
+    overflow: hidden;
+}
+/*  后代组合器：空格选择前一个元素的后代节点。
+    overflow: hidden 用于阻止margin合并
+*/
+
+/* 赤 */
+.rainbow > div {
+    width: 500px;
+    height: 500px;
+    background: rgb(255, 0, 0);
+    border-radius: 50%;
+}
+/* 
+    border-radius: 允许你设置元素的外边框圆角。50%可以画圆形
+    来源：https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius
+*/
+
+/* 橙 */
+.rainbow > div > div {
+    background: #f5750c;
+    height : 475px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+/* 黄 */
+.rainbow > div > div > div {
+    background: #fff90c;
+    height : 450px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+/* 绿 */
+.rainbow > div > div > div > div {
+    background: #00f210;
+    height : 425px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+/* 蓝 */
+.rainbow > div > div > div > div > div {
+    background: #0c81e9;
+    height : 400px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+/* 靛 */
+.rainbow > div > div > div > div > div > div {
+    background: #26455d;
+    height : 375px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+/* 紫 */
+.rainbow > div > div > div > div > div > div > div {
+    background: #3f006a;
+    height : 350px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+/* 白 */
+.rainbow > div > div > div > div > div > div > div > div {
+    background: #FFFFFF;
+    height : 325px;
+    margin: 10px;
+    border-radius: 50%;
+}
